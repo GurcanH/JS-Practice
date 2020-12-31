@@ -4,10 +4,20 @@ test('Reverse function exists', () => {
   expect(reverse).toBeDefined();
 });
 
-test('Reverse reverses a string', () => {
+test('Reverse reverses a string-1', () => {
   expect(reverse('abcd')).toEqual('dcba');
 });
 
-test('Reverse reverses a string', () => {
+test('Reverse reverses a string-2', () => {
   expect(reverse('  abcd')).toEqual('dcba  ');
+});
+
+test('Reverse reverses a string-3', () => {
+  expect(
+    reverse(
+      'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxzzzzzzzzzzzzzzzzzzzzaaaaaaaaaaqwertyuiopasdfghjklzxcvbnm'
+    )
+  ).toEqual(
+    'mnbvcxzlkjhgfdsapoiuytrewqaaaaaaaaaazzzzzzzzzzzzzzzzzzzzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+  );
 });
