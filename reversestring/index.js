@@ -6,7 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-function reverseG(str) {
+function reverse(str) {
   let reverseStr = '';
   for (let i = str.length - 1; i >= 0; i--) {
     reverseStr += str.charAt(i);
@@ -32,7 +32,7 @@ function reverse2(str) {
 }
 
 // Solution 3
-function reverse(str) {
+function reverse3(str) {
   return str.split('').reduce((rev, char) => char + rev, '');
 }
 
