@@ -29,3 +29,11 @@
     reverseInt(500) === 5
     reverseInt(-15) === -51
     reverseInt(-90) === -9
+
+## MaxChars
+
+    --- Directions
+    Given a string, return the character that is most commonly used in the string.
+    --- Examples
+    maxChar("abcccccccd") === "c"
+    maxChar("apple 1231111") === "1"
